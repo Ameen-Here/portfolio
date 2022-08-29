@@ -56,7 +56,7 @@ export const Data = () => {
         </svg>
       </h1>
       <h3 className="home__subtitle">Web Developer</h3>
-      <p className="home__descriptiom">
+      <p className="home__description">
         I'm a Full Stack web Developer (MERN stack).
       </p>
 

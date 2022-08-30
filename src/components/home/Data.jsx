@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 
 export const Data = () => {
   return (
@@ -55,7 +56,21 @@ export const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">Web Developer</h3>
+      <h3 className="home__subtitle">
+        <Typewriter
+          options={{ loop: true }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("Hello World!!!")
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString("Web Developer.")
+              .pauseFor(2000)
+              .deleteAll()
+              .start();
+          }}
+        />
+      </h3>
       <p className="home__description">
         I'm a Full Stack Web Developer who specializes in <b>MERN</b> stack.
       </p>

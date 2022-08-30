@@ -20,8 +20,11 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Full Stack Web Developer, I create web pages using MERN stack. Self
-            taught programmer, also code in python.
+            I'm a full stack web developer focused on making beautiful,
+            functional and scalable websites and web apps. I have developed many
+            types of full stack projects from API to a financial tracker
+            website. I code using HTML, CSS, JS, React JS, Mongo, Python,etc.
+            And eager to learn more.
           </p>
 
           <a href={CV} download="" className="button button--flex">

@@ -1,5 +1,5 @@
 .section__subtitle {
-  color: var(--title-color-light);
+  color: var(--title-color);
 }
 
 .about__container {
@@ -46,7 +46,7 @@
 }
 
 .about__subtitle {
-  font-size: var(--tiny-font-size);
+  font-size: var(--small-font-size);
   color: var(--title-color-light);
 }
 

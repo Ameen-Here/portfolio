@@ -10,6 +10,7 @@
   --hue: 0;
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 20%);
+  --light-color-light: rgba(36, 36, 36, 0.809);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
@@ -51,6 +52,19 @@
   --z-modal: 1000;
 }
 
+.dark_theme {
+  --hue: 0;
+  --sat: 0%;
+  --title-color: white !important;
+  --light-color-light: white !important;
+  --title-color-dark: white !important;
+  --text-color: rgb(25, 24, 24) !important;
+  --body-color: rgb(25, 24, 24) !important;
+  --container-color: rgb(25, 24, 24) !important;
+
+  background-color: var(--container-color);
+}
+
 /* RESPONSIVE TYPOGRAPHY */
 @media screen and (max-width: 992px) {
   :root {
@@ -86,8 +100,8 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
   color: var(--text-color);
+  background-color: var(--container-color);
 }
 
 h1,

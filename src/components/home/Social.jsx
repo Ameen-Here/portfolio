@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 
 const Social = () => {
@@ -9,23 +9,24 @@ const Social = () => {
         className="home__social-icon"
         target="_blank"
       >
-        <i className="uil uil-github-alt"></i>
+        <i className="uil uil-github-alt"></i>{" "}
+        <span className="social__small-Text">Github</span>
       </a>
-
       <a
         href="https://www.linkedin.com/in/ameen-noushad-888b79242/"
         className="home__social-icon"
         target="_blank"
       >
-        <i className="uil uil-linkedin-alt"></i>
+        <i className="uil uil-linkedin-alt"></i>{" "}
+        <span className="social__small-Text">LinkedIn</span>
       </a>
-
       <a
         href="https://twitter.com/Ameen_Here_6"
         className="home__social-icon"
         target="_blank"
       >
-        <i className="uil uil-twitter-alt"></i>
+        <i className="uil uil-twitter-alt"></i>{" "}
+        <span className="social__small-Text">Twitter</span>
       </a>
     </div>
   );

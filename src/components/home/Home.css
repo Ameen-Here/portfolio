@@ -12,16 +12,21 @@
 .home__social {
   display: grid;
   grid-template-columns: max-content;
-  row-gap: 1rem;
+  row-gap: 0.3rem;
 }
 
 .home__social-icon {
-  font-size: 1.5rem;
-  color: var(--title-color);
+  font-size: 1.3rem;
+  color: rgba(36, 36, 36, 0.809);
+}
+
+.social__small-Text {
+  font-size: 0.8rem;
 }
 
 .home__social-icon:hover {
   color: var(--title-color-dark);
+  /* border: 2px solid var(--title-color-dark); */
 }
 
 .home__title {

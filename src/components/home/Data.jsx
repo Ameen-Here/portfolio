@@ -57,7 +57,7 @@ export const Data = () => {
       </h1>
       <h3 className="home__subtitle">Web Developer</h3>
       <p className="home__description">
-        I'm a Full Stack web Developer (MERN stack).
+        I'm a Full Stack Web Developer who specializes in <b>MERN</b> stack.
       </p>
 
       <a href="#contact" className="button button--flex">

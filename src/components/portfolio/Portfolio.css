@@ -24,7 +24,7 @@
 }
 
 .portfolio__lists {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .portfolio__list {
@@ -80,10 +80,41 @@
 
 .portfolio__sub-description {
   font-size: var(--normal-font-size);
+  color: var(--text-color);
   padding: 1rem 0;
 }
 
 .bulletin {
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
+}
+
+/* ===================  BREAKPOINTS =================== */
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .portfolio__left {
+    height: 240px;
+    width: 400px;
+  }
+  .portfolio__description {
+    height: 310px;
+    width: 420px;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .portfolio__category {
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .portfolio__list {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+    justify-content: center;
+    margin: auto;
+  }
 }

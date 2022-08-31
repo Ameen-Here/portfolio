@@ -1,5 +1,6 @@
 import "./Portfolio.css";
 import WorkImg from "../../assets/work1.jpg";
+import ReactPlayer from "react-player";
 
 import React from "react";
 
@@ -22,7 +23,15 @@ const Portfolio = () => {
       <div className="portfolio__lists container grid">
         <div className="portfolio__list">
           <div className="portfolio__left">
-            <img className="portfolio__img" src={WorkImg} />
+            <ReactPlayer
+              className="portfolio__video"
+              width="100%"
+              height="100%"
+              url="https://www.youtube.com/watch?v=zTitoHKsyJg"
+              controls={true}
+              light={true}
+            />
+
             <div className="portfolio__links">
               <a
                 href="https://github.com/Ameen-Here/Asset-Tracker-Website"

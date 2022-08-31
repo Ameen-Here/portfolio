@@ -21,10 +21,10 @@ const About = () => {
 
           <p className="about__description">
             I'm a full stack web developer focused on building functional,
-            beautiful, and scalable websites and web apps. I have built various
-            types of full stack projects. I have experience in using HTML, CSS,
-            JS, React JS, Mongo, Python, Django, etc to build websites and
-            applications. Always eager to learn more.
+            beautiful, and scalable websites. I have built various types of full
+            stack projects. I have experience in using HTML, CSS, JS, React JS,
+            Mongo, Python, Django, etc to build websites and applications.
+            Always eager to learn more.
           </p>
 
           <a href={CV} download="" className="button button--flex">

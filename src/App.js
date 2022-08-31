@@ -3,6 +3,7 @@ import { useState } from "react";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
 
 function App() {
   const [themeClass, setThemeClass] = useState("");
@@ -20,6 +21,7 @@ function App() {
       <main className="main">
         <Home />
         <About />
+        <Skills />
       </main>
     </div>
   );

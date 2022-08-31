@@ -11,7 +11,11 @@ const Header = (props) => {
     props.themeSwitch();
     if (curTheme === "Bright") {
       setCurTheme("Dark");
-      setThemeIcon(<i class="uil uil-brightness"></i>);
+      setThemeIcon(
+        <>
+          <i class="uil uil-brightness"></i>
+        </>
+      );
     } else {
       setCurTheme("Bright");
       setThemeIcon(<i class="uil uil-moon"></i>);

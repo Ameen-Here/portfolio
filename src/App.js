@@ -6,6 +6,7 @@ import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [themeClass, setThemeClass] = useState("");
@@ -26,6 +27,7 @@ function App() {
         <Portfolio />
         <Skills />
         <Contact />
+        <Footer />
       </main>
     </div>
   );

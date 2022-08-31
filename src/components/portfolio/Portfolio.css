@@ -1,6 +1,7 @@
 .portfolio__category {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 0.5rem;
   margin-left: 30%;
@@ -119,7 +120,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .portfolio__left {
     height: 240px;
     width: 300px;
@@ -133,5 +134,16 @@
     gap: 0.1rem;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .portfolio__left {
+    height: 240px;
+    width: 280px;
+  }
+  .portfolio__description {
+    height: 310px;
+    width: 280px;
   }
 }

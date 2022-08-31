@@ -24,8 +24,68 @@ const Portfolio = () => {
           <div className="portfolio__left">
             <img className="portfolio__img" src={WorkImg} />
             <div className="portfolio__links">
-              <button className="portfolio__link">Source Code</button>
-              <button className="portfolio__link">Live</button>
+              <a
+                href="https://github.com/Ameen-Here/Asset-Tracker-Website"
+                target="_blank"
+                className="portfolio__link"
+              >
+                Code <i class="contact__button-icon bx bxl-github"></i>
+              </a>
+              <a
+                href="https://fierce-citadel-85684.herokuapp.com/"
+                target="_blank"
+                className="portfolio__link"
+              >
+                Live <i class="contact__button-icon bx bxs-window-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div className="portfolio__description">
+            <h2 className="portfolio__header">Asset Tracker</h2>
+            <p className="portfolio__sub-description">
+              Asset Tracker helps you track all your financial assets. In this
+              website, the users will get live day to day update of their stocks
+              as well as they can track their personal assets.
+            </p>
+
+            <h2 className="portfolio__header">What problem it solves</h2>
+            <p className="portfolio__sub-description">
+              Users buy assets from different platforms available in the market,
+              to track these assets manually as well as to calculate profit/loss
+              is a time consuming task. Asset Tracker solves this problem
+            </p>
+
+            <h2 className="portfolio__header">Features</h2>
+            <p className="portfolio__sub-description">
+              Live update every 24 hours <span className="bulletin">*</span>{" "}
+              Graphical representation using charts{" "}
+              <span className="bulletin">*</span> Authentication and secure
+              datas <span className="bulletin">*</span> Local assets with update
+              price feature <span className="bulletin">*</span> Cross platform
+              and devices
+            </p>
+          </div>
+        </div>
+
+        <div className="portfolio__list">
+          <div className="portfolio__left">
+            <img className="portfolio__img" src={WorkImg} />
+            <div className="portfolio__links">
+              <a
+                href="https://github.com/Ameen-Here/Asset-Tracker-Website"
+                target="_blank"
+                className="portfolio__link"
+              >
+                Code <i class="contact__button-icon bx bxl-github"></i>
+              </a>
+              <a
+                href="https://fierce-citadel-85684.herokuapp.com/"
+                target="_blank"
+                className="portfolio__link"
+              >
+                Live <i class="contact__button-icon bx bxs-window-alt"></i>
+              </a>
             </div>
           </div>
 

@@ -36,6 +36,7 @@
   border-radius: 0.75rem;
   text-align: center;
   padding: 4rem 2rem;
+  padding-bottom: 2rem;
 }
 
 .portfolio__left {
@@ -46,20 +47,19 @@
 
 .portfolio__description {
   text-align: left;
-  height: 330px;
-  width: 440px;
+  height: 350px;
+  width: 460px;
   resize: none;
   overflow: auto;
 }
 
 .portfolio__header {
   font-size: var(--h3-font-size);
-  margin-bottom: 0.25rem;
   font-weight: var(--font-medium);
 }
 
 .portfolio__links {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   margin: 0 auto;
   width: 300px;
   display: flex;
@@ -67,11 +67,20 @@
 }
 
 .portfolio__link {
+  color: var(--title-color);
+  padding: 0.5rem;
+  border: 2px solid var(--title-color-light);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.portfolio__link:hover {
+  background-color: var(--border-box-color);
 }
 
 .portfolio__sub-description {
   font-size: var(--normal-font-size);
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 .bulletin {

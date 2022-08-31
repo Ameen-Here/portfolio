@@ -3,22 +3,92 @@ import ReactPlayer from "react-player";
 
 import React, { useState } from "react";
 import { featuredData } from "./featuredData";
+import { fullStackData } from "./fullStackData";
+import { gamesData } from "./gameData";
+import { botsData } from "./botsData";
+import { apiData } from "./apiData";
 
 const Portfolio = () => {
   const [showContent, setShowContent] = useState(featuredData);
+
+  const [curNav, setCurNav] = useState("featured");
+
+  const fullStackHandler = () => {
+    setCurNav("fullStack");
+    setShowContent(fullStackData);
+  };
+  const featureHandler = () => {
+    setCurNav("featured");
+    setShowContent(featuredData);
+  };
+  const gameHandler = () => {
+    setCurNav("games");
+    setShowContent(gamesData);
+  };
+  const botsHandler = () => {
+    setCurNav("bots");
+    setShowContent(botsData);
+  };
+  const apiHandler = () => {
+    setCurNav("api");
+    setShowContent(apiData);
+  };
   return (
     <section className="section portfolio" id="portfolio">
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Most recent works</span>
 
       <div className="portfolio__category">
-        <div className="portfolio__category-title portfolio__category-title-active">
+        <div
+          className={
+            curNav === "featured"
+              ? "portfolio__category-title portfolio__active"
+              : "portfolio__category-title"
+          }
+          onClick={featureHandler}
+        >
           Featured
         </div>
-        <div className="portfolio__category-title">Full stack</div>
-        <div className="portfolio__category-title">Games</div>
-        <div className="portfolio__category-title">Bots</div>
-        <div className="portfolio__category-title">API</div>
+        <div
+          className={
+            curNav === "fullStack"
+              ? "portfolio__category-title portfolio__active"
+              : "portfolio__category-title"
+          }
+          onClick={fullStackHandler}
+        >
+          Full stack
+        </div>
+        <div
+          className={
+            curNav === "games"
+              ? "portfolio__category-title portfolio__active"
+              : "portfolio__category-title"
+          }
+          onClick={gameHandler}
+        >
+          Games
+        </div>
+        <div
+          className={
+            curNav === "bots"
+              ? "portfolio__category-title portfolio__active"
+              : "portfolio__category-title"
+          }
+          onClick={botsHandler}
+        >
+          Bots
+        </div>
+        <div
+          className={
+            curNav === "api"
+              ? "portfolio__category-title portfolio__active"
+              : "portfolio__category-title"
+          }
+          onClick={apiHandler}
+        >
+          API
+        </div>
       </div>
 
       <div className="portfolio__lists container grid">

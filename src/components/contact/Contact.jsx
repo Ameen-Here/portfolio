@@ -111,6 +111,21 @@ const Contact = () => {
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
+
+            <div className="contact__card">
+              <i className="bx bxl-linkedin-square contact__card-icon"></i>
+
+              <h3 className="contact__card-title">LinkedIn</h3>
+              <span className="contact__card-data">Ameen Noushad</span>
+
+              <a
+                href="https://www.linkedin.com/in/ameen-noushad-888b79242/"
+                className="contact__button"
+              >
+                Connect with me
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
           </div>
         </div>
 

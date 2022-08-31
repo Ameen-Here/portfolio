@@ -6,7 +6,6 @@ import { featuredData } from "./featuredData";
 import { fullStackData } from "./fullStackData";
 import { gamesData } from "./gameData";
 import { botsData } from "./botsData";
-import { pythonData } from "./pythonData";
 
 const Portfolio = () => {
   const [showContent, setShowContent] = useState(featuredData);
@@ -29,10 +28,7 @@ const Portfolio = () => {
     setCurNav("bots");
     setShowContent(botsData);
   };
-  const pyHandler = () => {
-    setCurNav("python");
-    setShowContent(pythonData);
-  };
+
   return (
     <section className="section portfolio" id="portfolio">
       <h2 className="section__title">Portfolio</h2>
@@ -78,16 +74,6 @@ const Portfolio = () => {
           onClick={botsHandler}
         >
           Bots
-        </div>
-        <div
-          className={
-            curNav === "python"
-              ? "portfolio__category-title portfolio__active"
-              : "portfolio__category-title"
-          }
-          onClick={pyHandler}
-        >
-          Python
         </div>
       </div>
 

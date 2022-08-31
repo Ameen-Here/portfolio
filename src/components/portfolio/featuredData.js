@@ -43,6 +43,6 @@ export const featuredData = [
     liveUrl: "https://ameen-here.github.io/Tic-Tac-Toe/",
     mainHeader: "Tic-Tac-Toe Game",
     mainContent:
-      "This is where my web development journey started, my first website project. Built Tic-Tac-Toe game from scratch using basic HTML, CSS and Javascript.",
+      "This is where my web development journey started, my first website project. Built a Tic-Tac-Toe game from scratch using basic HTML, CSS, and Javascript.",
   },
 ];

@@ -7,6 +7,7 @@ import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
 import Footer from "./components/footer/Footer";
+import ScrollUp from "./components/scrollToUp/ScrollUp";
 
 function App() {
   const [themeClass, setThemeClass] = useState("");
@@ -27,8 +28,10 @@ function App() {
         <Portfolio />
         <Skills />
         <Contact />
-        <Footer />
       </main>
+
+      <Footer />
+      <ScrollUp />
     </div>
   );
 }

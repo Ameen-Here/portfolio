@@ -6,7 +6,7 @@ import { featuredData } from "./featuredData";
 import { fullStackData } from "./fullStackData";
 import { gamesData } from "./gameData";
 import { botsData } from "./botsData";
-import { apiData } from "./apiData";
+import { pythonData } from "./pythonData";
 
 const Portfolio = () => {
   const [showContent, setShowContent] = useState(featuredData);
@@ -29,9 +29,9 @@ const Portfolio = () => {
     setCurNav("bots");
     setShowContent(botsData);
   };
-  const apiHandler = () => {
-    setCurNav("api");
-    setShowContent(apiData);
+  const pyHandler = () => {
+    setCurNav("python");
+    setShowContent(pythonData);
   };
   return (
     <section className="section portfolio" id="portfolio">
@@ -81,13 +81,13 @@ const Portfolio = () => {
         </div>
         <div
           className={
-            curNav === "api"
+            curNav === "python"
               ? "portfolio__category-title portfolio__active"
               : "portfolio__category-title"
           }
-          onClick={apiHandler}
+          onClick={pyHandler}
         >
-          API
+          Python
         </div>
       </div>
 
@@ -113,13 +113,16 @@ const Portfolio = () => {
                   >
                     Code <i class="contact__button-icon bx bxl-github"></i>
                   </a>
-                  <a
-                    href={itemData.liveUrl}
-                    target="_blank"
-                    className="portfolio__link"
-                  >
-                    Live <i class="contact__button-icon bx bxs-window-alt"></i>
-                  </a>
+                  {itemData.liveUrl && (
+                    <a
+                      href={itemData.liveUrl}
+                      target="_blank"
+                      className="portfolio__link"
+                    >
+                      Live{" "}
+                      <i class="contact__button-icon bx bxs-window-alt"></i>
+                    </a>
+                  )}
                 </div>
               </div>
 

@@ -30,7 +30,7 @@ export const featuredData = [
   },
   {
     url: "https://youtu.be/oiK1nZ0HkJI",
-    liveUrl: "#",
+
     gitUrl: "https://github.com/Ameen-Here/portfolio",
     mainHeader: "Personal Portfolio",
     mainContent:

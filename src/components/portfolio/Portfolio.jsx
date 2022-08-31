@@ -140,10 +140,14 @@ const Portfolio = () => {
                   </>
                 )}
 
-                <h2 className="portfolio__header">Features</h2>
-                <p className="portfolio__sub-description">
-                  {itemData.featDescription}
-                </p>
+                {itemData.featDescription && (
+                  <>
+                    <h2 className="portfolio__header">Features</h2>
+                    <p className="portfolio__sub-description">
+                      {itemData.featDescription}
+                    </p>
+                  </>
+                )}
               </div>
             </div>
           );

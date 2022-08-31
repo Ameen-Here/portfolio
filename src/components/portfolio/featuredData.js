@@ -28,4 +28,21 @@ export const featuredData = [
     featDescription: `API limit update every 24 hours | 1000's of unique reviews | 1000's of unique names from
     different parts of the world | Responsive and interactive documentation page.`,
   },
+  {
+    url: "https://youtu.be/oiK1nZ0HkJI",
+    liveUrl: "#",
+    gitUrl: "https://github.com/Ameen-Here/portfolio",
+    mainHeader: "Personal Portfolio",
+    mainContent:
+      "My personal portfolio website to showcase my projects and skillset. Created using HTML, CSS, ReactJS, Chakra UI, etc. All my contact details are provided in this website, feel free to reach out.",
+    featDescription: `Responsive across devices | Rendered 3D model using ThreeJS | Dark theme `,
+  },
+  {
+    url: "https://youtu.be/XrbcxYFZNMg",
+    gitUrl: "https://github.com/Ameen-Here/Tic-Tac-Toe",
+    liveUrl: "https://ameen-here.github.io/Tic-Tac-Toe/",
+    mainHeader: "Tic-Tac-Toe Game",
+    mainContent:
+      "This is where my web development journey started, my first website project. Built Tic-Tac-Toe game from scratch using basic HTML, CSS and Javascript.",
+  },
 ];

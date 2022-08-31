@@ -7,37 +7,87 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
+const validRegex =
+  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
 const Contact = () => {
   const form = useRef();
 
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const messageRef = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
+    const mailInp = emailRef.current.value.trim();
+    const nameInp = nameRef.current.value.trim();
+    const messageInp = messageRef.current.value.trim();
 
-    emailjs
-      .sendForm(
-        "service_72e8h8r",
-        "template_9rq4z8a",
-        form.current,
-        "sV1HVLFWUAgO3ZPza"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          toast.success("Message Successfully sent!!!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    console.log(mailInp.length);
+    console.log(nameInp.length);
+    console.log(messageInp.length);
+    if (
+      mailInp.length !== 0 &&
+      nameInp.length !== 0 &&
+      messageInp.length !== 0
+    ) {
+      if (mailInp.match(validRegex)) {
+        emailjs
+          .sendForm(
+            "service_72e8h8r",
+            "template_9rq4z8a",
+            form.current,
+            "sV1HVLFWUAgO3ZPza"
+          )
+          .then(
+            () => {
+              toast.success("Message Successfully sent!!!", {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              });
+              e.target.reset();
+            },
+            (error) => {
+              console.log(error.text);
+              toast.error("Something went wrong", {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              });
+            }
+          );
+      } else {
+        toast.error("Enter valid email address", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
+    } else {
+      console.log("here");
+      toast.error("Please fill all the details", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
   };
 
   return (
@@ -71,7 +121,8 @@ const Contact = () => {
             <div className="contact__form-div">
               <label className="contact__form-tag">Mail</label>
               <input
-                type="email"
+                ref={emailRef}
+                type="text"
                 className="contact__form-input"
                 name="email"
                 placeholder="Insert your email"
@@ -81,6 +132,7 @@ const Contact = () => {
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
               <input
+                ref={nameRef}
                 type="text"
                 className="contact__form-input"
                 name="name"
@@ -91,6 +143,7 @@ const Contact = () => {
             <div className="contact__form-div contact__form-area">
               <label className="contact__form-tag">Message</label>
               <textarea
+                ref={messageRef}
                 name="message"
                 cols={30}
                 rows="10"
@@ -102,7 +155,7 @@ const Contact = () => {
             <button className="button button--flex">
               Send Message{" "}
               <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"

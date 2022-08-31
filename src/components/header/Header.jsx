@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = (props) => {
   /* ===================  TOGGLE MENU =================== */
   const [Toggle, showMenu] = useState(false);
-  const [themeIcon, setThemeIcon] = useState(<i class="uil uil-moon"></i>);
+  const [themeIcon, setThemeIcon] = useState(<i className="uil uil-moon"></i>);
 
   const [curTheme, setCurTheme] = useState("Bright");
   const switchTheme = () => {
@@ -13,12 +13,12 @@ const Header = (props) => {
       setCurTheme("Dark");
       setThemeIcon(
         <>
-          <i class="uil uil-brightness"></i>
+          <i className="uil uil-brightness"></i>
         </>
       );
     } else {
       setCurTheme("Bright");
-      setThemeIcon(<i class="uil uil-moon"></i>);
+      setThemeIcon(<i className="uil uil-moon"></i>);
     }
   };
 

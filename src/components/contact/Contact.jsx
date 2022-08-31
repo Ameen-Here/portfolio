@@ -1,5 +1,8 @@
 import "./Contact.css";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import React from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
@@ -13,13 +16,23 @@ const Contact = () => {
     emailjs
       .sendForm(
         "service_72e8h8r",
-        "mplate_9rq4z8a",
+        "template_9rq4z8a",
         form.current,
         "sV1HVLFWUAgO3ZPza"
       )
       .then(
         (result) => {
           console.log(result.text);
+          toast.success("Message Successfully sent!!!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
@@ -29,6 +42,7 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
+      <ToastContainer />
       <h2 className="section__title">Get in touch</h2>
       <span className="section__subtitle">Reach out to me</span>
 

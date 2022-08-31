@@ -92,6 +92,33 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--body-color-dark) var(--border-box-color);
+}
+
+::-webkit-scrollbar {
+  width: 0.6vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--body-color-dark);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--border-box-color);
+}
+
+html::-webkit-scrollbar {
+  width: 1vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--body-color-dark);
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--border-box-color);
 }
 
 body,

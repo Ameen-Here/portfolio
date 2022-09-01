@@ -1,70 +1,50 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![portfolioBanner](https://user-images.githubusercontent.com/86822695/188012292-786d5750-9a0e-4ff3-8c1c-660926b5af76.PNG)
 
-## Available Scripts
+# My Portfolio
+![Stars](https://img.shields.io/ore/stars/stars)
 
-In the project directory, you can run:
+My personal portfolio website to showcase my projects and skillset. Created using HTML, CSS, ReactJS, Chakra UI, etc. All my contact details are provided on this website, feel free to reach out.
 
-### `npm start`
+### Live Demo:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Site URL : www.ameennoushad.com
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![portfolioDemoGif](https://user-images.githubusercontent.com/86822695/188013004-29dc3860-5b11-4d29-8d32-5bc0d461f3f1.gif)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies Used
 
-### `npm run build`
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="30" height="30"/> </a>  &emsp;   <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="30" height="30"/> </a>  &emsp;   <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="30" height="30"/> </a>  &emsp;  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="css3" width="30" height="30"/> </a>  &emsp;  <a href="https://redux.js.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="css3" width="30" height="30"/> </a>  &emsp;       
+ 
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Responsive across devices
+- Rendered a 3d model using Three.Js
+- Dark mode available
+- Contact Form
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How To use the features available
+ 
+#### Dark Mode
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can make the website go dark mode within a click.
 
-### `npm run eject`
+![PortfolioDarkMode](https://user-images.githubusercontent.com/86822695/188013735-204b1710-a3c9-43a0-be2f-681f7d0a4005.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Playable 3D model 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You can move and zoom in and out of the 3D model displayed in the about section.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![portfolio3dModel](https://user-images.githubusercontent.com/86822695/188014060-df0c9271-f136-4e7e-96ae-ab282a287277.gif)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+#### Send message using message form
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can send message using message form, where the message will be sent to my account. you will also get feedback if the message is successfully sent.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![contactMeFormPortfolio](https://user-images.githubusercontent.com/86822695/188014344-60a2682b-e665-4e9b-8392-5070a4dbe8de.gif)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

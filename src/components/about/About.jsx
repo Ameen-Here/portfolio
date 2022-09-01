@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
 
-import CV from "../../assets/resume.pdf";
 import Info from "./Info";
 import VoxelDog from "./voxel-dog";
 

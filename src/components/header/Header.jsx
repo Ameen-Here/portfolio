@@ -51,6 +51,15 @@ const Header = (props) => {
             </li>
             <li className="nav__item">
               <a
+                href="https://bit.ly/hiremeAmeen"
+                target="_blank"
+                className="nav__link"
+              >
+                <i className="uil uil-estate nav__icon"></i>Resume
+              </a>
+            </li>
+            <li className="nav__item">
+              <a
                 href="#about"
                 onClick={() => setActiveNav("#about")}
                 className={

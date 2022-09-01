@@ -53,7 +53,7 @@ const Portfolio = () => {
           }
           onClick={fullStackHandler}
         >
-          Full stack
+          Website
         </div>
         <div
           className={

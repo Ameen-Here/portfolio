@@ -13,12 +13,4 @@ export const botsData = [
     mainHeader: "Instagram Follower Bot",
     mainContent: `This bot automatically log into the user insta and will go to the specified profile and follow that profile followers. Made using python, selenium and beautiful soup module`,
   },
-
-  {
-    url: "https://youtu.be/STWyPnvniTs",
-    gitUrl:
-      "https://github.com/Ameen-Here/100DaysOfCode/tree/main/Day50_Tinder_Swipping_Bot",
-    mainHeader: "Tinder Swipping Bot",
-    mainContent: `This bot automatically log into the user tinder account and will start swipping until the account limit has been reached.Made using python, and selenium web driver`,
-  },
 ];

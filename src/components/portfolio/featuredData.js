@@ -9,8 +9,8 @@ export const featuredData = [
     as well as they can track their personal assets.`,
     probDescription: `    Users buy assets from different platforms available in the market,
     to track these assets manually as well as to calculate profit/loss
-    is a time consuming task. Asset Tracker solves this problem`,
-    featDescription: `  Live update every 24 hours | Graphical representation using charts | Authentication and secure
+    is a time consuming task. Asset Tracker simplifies this problem.`,
+    featDescription: `  Live update every 24 hours | Graphical representation using charts | Authentication and securing
     datas | Local assets with update | price feature`,
   },
   {
@@ -19,13 +19,13 @@ export const featuredData = [
     liveUrl: "https://reviewgenerator-16007.web.app/",
     mainHeader: "Review Generator API",
     mainContent: `Review Generator API generates random testimonials for your
-    application. 1000's random of reviews with 1000's of unique names
+    application. Thousands of random of reviews with thousands of unique names
     from different parts of the world and random rating system, all
     customisable by user.`,
-    probDescription: ` Tired of copy and pasting lorem for user's testimonial text.It
-    solves this issue by creating random reviews for your mock/demo
+    probDescription: ` Tired of copy and pasting lorem for user's testimonial text? It
+    simplifies this issue by creating random reviews for your mock/demo
     shopping website, product pages, etc.`,
-    featDescription: `API limit update every 24 hours | 1000's of unique reviews | 1000's of unique names from
+    featDescription: `API limit updates every 24 hours | Thousands of unique reviews | Thousands of unique names from
     different parts of the world | Responsive and interactive documentation page.`,
   },
   {
@@ -34,7 +34,7 @@ export const featuredData = [
     gitUrl: "https://github.com/Ameen-Here/portfolio",
     mainHeader: "Personal Portfolio",
     mainContent:
-      "My personal portfolio website to showcase my projects and skillset. Created using HTML, CSS, ReactJS, Chakra UI, etc. All my contact details are provided in this website, feel free to reach out.",
+      "My personal portfolio website to showcase my projects and skillset. Created using HTML, CSS, ReactJS, Chakra UI, etc. All my contact details are provided on this website, feel free to reach out.",
     featDescription: `Responsive across devices | Rendered 3D model using ThreeJS | Dark theme `,
   },
   {

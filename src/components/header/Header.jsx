@@ -51,7 +51,7 @@ const Header = (props) => {
             </li>
             <li className="nav__item">
               <a
-                href="https://bit.ly/hiremeAmeen"
+                href="https://bit.ly/3RmHpfU"
                 target="_blank"
                 className="nav__link"
               >
@@ -109,7 +109,11 @@ const Header = (props) => {
               </a>
             </li>
             <li className="nav__item">
-              <a onClick={switchTheme} className="nav__link nav__theme_switch">
+              <a
+                onClick={switchTheme}
+                href="#"
+                className="nav__link nav__theme_switch"
+              >
                 {themeIcon}
               </a>
             </li>

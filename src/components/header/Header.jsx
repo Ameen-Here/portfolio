@@ -51,7 +51,7 @@ const Header = (props) => {
             </li>
             <li className="nav__item">
               <a
-                href="hhttps://bit.ly/3oI5tRE"
+                href="https://bit.ly/3WR0QRD"
                 target="_blank"
                 className="nav__link"
               >

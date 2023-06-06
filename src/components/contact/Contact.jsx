@@ -23,9 +23,6 @@ const Contact = () => {
     const nameInp = nameRef.current.value.trim();
     const messageInp = messageRef.current.value.trim();
 
-    console.log(mailInp.length);
-    console.log(nameInp.length);
-    console.log(messageInp.length);
     if (
       mailInp.length !== 0 &&
       nameInp.length !== 0 &&
@@ -53,7 +50,6 @@ const Contact = () => {
               e.target.reset();
             },
             (error) => {
-              console.log(error.text);
               toast.error("Something went wrong", {
                 position: "top-right",
                 autoClose: 5000,
@@ -77,7 +73,6 @@ const Contact = () => {
         });
       }
     } else {
-      console.log("here");
       toast.error("Please fill all the details", {
         position: "top-right",
         autoClose: 5000,

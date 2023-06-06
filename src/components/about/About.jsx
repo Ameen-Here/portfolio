@@ -27,7 +27,7 @@ const About = () => {
           </p>
 
           <a
-            href="https://bit.ly/3RmHpfU"
+            href="https://bit.ly/3WR0QRD"
             target="_blank"
             className="button button--flex"
           >
